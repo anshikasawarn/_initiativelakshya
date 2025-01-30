@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lakshya Organization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <!-- Homepage Section -->
+        <header id="homepage">
+            <h1>Empowering Through Innovation - 2025</h1>
+            <p>Empowering communities, inspiring change, and fostering leadership across borders.</p>
+            <button onclick="location.href='about.html'">Learn More</button>
+
+           
+        </header>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
